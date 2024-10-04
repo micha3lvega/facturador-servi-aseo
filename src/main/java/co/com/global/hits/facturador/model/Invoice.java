@@ -33,8 +33,8 @@ public class Invoice implements Serializable {
 	private Date date;
 
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "client_id", nullable = false)
-	private Client client;
+	@JoinColumn(name = "customer_id", nullable = false)
+	private Customer client;
 
 	private Double total;
 

@@ -16,13 +16,13 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "clients")
-public class Client implements Serializable {
+@Table(name = "customers")
+public class Customer implements Serializable {
 
 	private static final long serialVersionUID = 328982520854260312L;
 
 	@Id
-	@Column(name = "client_id")
+	@Column(name = "customer_id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
